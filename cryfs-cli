@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Functions
+
+cryfs_mount ()
+{
+    cryfs $2 $3
+    return
+}
+
+cryfs_unmount ()
+{
+    fusermount -u $2
+    return
+}
+
+# Main
+
+case $1 in
+
+    up   ) cryfs_mount
+	;;
+    down ) cryfs_unmount
+	;;
+    *    ) echo "[up|down mount_point encrypted_directory]"
+
+esac
+
