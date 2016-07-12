@@ -1,1 +1,1 @@
-Your mileage may very. Use with caution.
+Your mileage may vary. Use with caution.
